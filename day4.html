@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day4</title>
+</head>
+<body>
+	<video width=300 height=200 controls>
+		<source src="video.mp4" type="video/mp4"/>
+	</video>
+		<button onclick="alert('반갑습니다')">안녕</button>
+	<p>
+		<a id="home">home</a>
+		<a id="seoul">seoul</a>
+		<a id="paris">paris</a>
+		<a id="tokyo">tokyo</a>
+	</p> 
+	<img src="images/home.png" width="50%">
+</body>
+<script>
+	document.getElementById("home").onclick=function(){
+		document.getElementsByTagName("img")[0].src="images/home.png"
+	}
+	document.getElementById("seoul").onclick=function(){
+		document.getElementsByTagName("img")[0].src="images/seoul.png"
+	}
+	document.getElementById("paris").onclick=function(){
+		document.getElementsByTagName("img")[0].src="images/paris.png"
+	}
+	document.getElementById("tokyo").onclick=function(){
+		document.getElementsByTagName("img")[0].src="images/tokyo.png"
+	}
+</script>
+</html>
